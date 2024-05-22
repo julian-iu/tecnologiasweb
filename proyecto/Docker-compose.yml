@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  proyecto-continer:
+    container_name : proyecto-continer
+    image : proyecto-continer:v2
+    build :
+      context : .
+    ports :  
+      - "2001:2001"
+    networks :
+      - proyectos-app
+
+networks :
+  proyectos-app :
